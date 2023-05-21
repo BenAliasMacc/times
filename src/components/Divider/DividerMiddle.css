@@ -1,0 +1,15 @@
+.dividerMiddle {
+    position: relative;
+    width: 100%;
+    height: 41rem;
+    background: url('../../assets/background-aircraft-wing.png') no-repeat;
+}
+.dividerMiddle__image-left, .dividerMiddle__image-right {
+    position: absolute;
+}
+.dividerMiddle__image-left {
+    left: 0;
+}
+.dividerMiddle__image-right {
+    right: 0;
+}

@@ -1,0 +1,11 @@
+#root {
+  --primary: #fff;
+  --secondary: #F5F5F5;
+  --tertiary: #7D8DDF;
+  --quaternary: #7BC672;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}

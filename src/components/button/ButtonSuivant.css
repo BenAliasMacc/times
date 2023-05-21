@@ -1,0 +1,7 @@
+.buttonSuivant {
+    width: 165px;
+    height: 61px;
+    background-color: var(--tertiary);
+    color: white;
+    border-radius: 56px;
+}
