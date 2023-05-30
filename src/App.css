@@ -1,9 +1,10 @@
 #root {
-  --primary: #fff;
+  --primary: #EFF0F6;
   --secondary: #F5F5F5;
   --tertiary: #7D8DDF;
   --quaternary: #7BC672;
-
+  --quintenary: #6F6C90;
+  
   max-width: 1440px;
   margin: 0 auto;
   padding: 2rem;

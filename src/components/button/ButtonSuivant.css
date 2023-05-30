@@ -1,4 +1,7 @@
 .buttonSuivant {
+    position: absolute;
+    bottom: -6rem;
+    right: 0px;
     width: 165px;
     height: 61px;
     background-color: var(--tertiary);

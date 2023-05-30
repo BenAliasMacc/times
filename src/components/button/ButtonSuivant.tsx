@@ -1,9 +1,14 @@
 import './ButtonSuivant.css'
 
-const ButtonSuivant = () => {
-    return (
-      <button className="buttonSuivant">ButtonSuivant</button>
-    )
+const ButtonSuivant = ({ setCurrentStep, currentStep }) => {
+
+  const handleNextStep = () => {
+    setCurrentStep(currentStep + 1);
+  };
+
+  return (
+    <button className="buttonSuivant" onClick={handleNextStep}>Suivant</button>
+  )
 };
 
 export default ButtonSuivant;
