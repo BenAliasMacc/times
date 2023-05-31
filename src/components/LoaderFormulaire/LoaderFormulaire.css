@@ -1,0 +1,13 @@
+.loaderFormulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+}
+.loaderFormulaire p {
+    color: var(--sixtinary);
+    font-size: 20px;
+    font-weight: 500;
+}

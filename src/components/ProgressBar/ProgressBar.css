@@ -48,12 +48,26 @@
     top: 50%;
     left: 50px;
     transform: translateY(-50%);
-    width: calc(6.125rem / 2);
+    width: 1rem;
     height: 6px;
     border-radius: 40px;
     background-color: var(--tertiary);
     z-index: 1;
     transition: width 2s 2s;
+}
+
+.step.loading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: calc(6.125rem / 2);
+    height: 6px;
+    border-radius: 40px;
+    background-color: var(--tertiary);
+    z-index: 1;
+    transition: width 2s;
 }
   
 .step.completed {

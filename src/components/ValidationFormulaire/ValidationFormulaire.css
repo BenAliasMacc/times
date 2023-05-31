@@ -1,0 +1,18 @@
+.validationFormulaire__title {
+    display: flex;
+    gap: 2rem;
+}
+.validationFormulaire__title p {
+    text-align: start;
+    color: var(--sixtinary);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+.validationFormulaire__title span {
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--quaternary);
+    margin: 0;
+}
