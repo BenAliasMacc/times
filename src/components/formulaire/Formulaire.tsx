@@ -1,12 +1,13 @@
 import './formulaire.css';
 import { useState } from 'react';
-import Etape1 from '../EtapesFormulaire/Etape1';
 import ProgressBar from '../ProgressBar/ProgressBar';
+import Etape1 from '../EtapesFormulaire/Etape1';
+import Etape2 from '../EtapesFormulaire/Etape2';
 
 const FormComponent = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  const [isCompleted, setIsCompleted] = useState(true);
+  const [isCompleted, setIsCompleted] = useState(false);
 
   return (
     <div className='formulaire'>
@@ -31,11 +32,14 @@ const FormComponent = () => {
 
         {/* Contenu de l'étape 2 */}
         {currentStep === 2 && (
-          <div>
-            <h2>Étape 2</h2>
-            {/* ... Autres champs et boutons de l'étape 2 ... */}
-            {/* <button onClick={handleNextStep}>Suivant</button> */}
-          </div>
+          <Etape2
+            setCurrentStep={setCurrentStep}  
+            currentStep={currentStep}
+            isLoading={isLoading}
+            setIsLoading={setIsLoading}
+            isCompleted={isCompleted}
+            setIsCompleted={setIsCompleted}
+          />
         )}
 
         {/* Contenu de l'étape 3 */}

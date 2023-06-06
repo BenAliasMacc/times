@@ -3,7 +3,18 @@ import './ButtonSuivant.css'
 const ButtonSuivant = (props:any) => {
 
   const handleNextStep = async () => {
-    props.isCompleted ? props.setCurrentStep(props.currentStep + 1) : null;
+
+    console.log(props);
+    
+
+    if (props?.formPart1) {
+      props.setFormPart1(false);
+    };
+    
+    if (props.isCompleted) {
+      props.setIsCompleted(false);
+      return props.setCurrentStep(props.currentStep + 1);
+    };
     
     props.setIsLoading(true);
 

@@ -7,11 +7,12 @@ const Etape1 = (props) => {
 
     return (
         <div className='etape1'>
-            {props.isLoading ? <LoaderFormulaire /> : 
-                props.isCompleted ? <ValidationFormulaire /> : 
+            {
+                props.isLoading ? <LoaderFormulaire /> : 
+                props.isCompleted ? <ValidationFormulaire {...props} /> : 
                 <div className='etape1__container'>
                     <div className='etape1__title'>
-                        <h2>Détails du vol</h2>
+                        <h3>Détails du vol</h3>
                         <p>Le calcul de votre indemnitée est 100% gratuite</p>
                     </div>
                     <p style={{textAlign: "center", width: "100%", fontWeight: "bold"}}>Scanner votre carte d'embarquement</p>
@@ -36,15 +37,10 @@ const Etape1 = (props) => {
                                 <input type="text" name='date' id='date' />
                             </div>
                         </div>
-                        <ButtonSuivant 
-                            setCurrentStep={props.setCurrentStep}  
-                            currentStep={props.currentStep} 
-                            setIsLoading={props.setIsLoading}
-                            setIsCompleted={props.setIsCompleted}
-                            isCompleted={props.isCompleted}
-                        />
+                        <ButtonSuivant {...props} />
                     </form>
-            </div>}
+                </div>
+            }
         </div>
     )
 }
